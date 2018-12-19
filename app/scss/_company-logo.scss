@@ -1,0 +1,12 @@
+.company-logo {
+  padding-bottom: 15px;
+  color: $primary-color;
+  font: 50px "Damion", "Helvetica", sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  .company-logo {
+    padding-top: 25px;
+    padding-bottom: 0;
+  }
+}

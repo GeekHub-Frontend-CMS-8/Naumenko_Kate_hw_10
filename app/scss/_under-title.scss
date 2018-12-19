@@ -1,0 +1,15 @@
+.under-title {
+  padding-bottom: 20px;
+  font: $secondary-font-size $primary-font;
+  text-transform: uppercase;
+
+  &__formatted {
+    color: #ec9da2;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .under-title {
+    font-size: $primary-font-size;
+  }
+}

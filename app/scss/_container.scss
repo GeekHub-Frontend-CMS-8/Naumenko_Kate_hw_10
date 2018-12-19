@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: center;
+  white-space: pre-line;
+  flex-wrap: wrap;
+
+  &__item {
+    max-width: 220px;
+    width: 100%;
+    padding: 45px 20px 30px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(200, 83, 90, 0.8);
+    color: $primary-color;
+  }
+
+  &__title {
+    font: $fourth-seniority-font-size $tertiary-font;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,55 @@
+.contact {
+  background-color: #75b4aa;
+  background-image: url("../img/Layer_contact.png");
+  color: $primary-color;
+
+  &__title {
+    padding-bottom: 15px;
+    font: $fourth-seniority-font-size $tertiary-font;
+  }
+
+  &__brand {
+    color: #c0dfda;
+    font: $primary-font-size $secondary-font;
+  }
+
+  &__street {
+    padding-top: 10px;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font: #{$secondary-font-size}/1.5 $primary-font;
+    text-align: center;
+  }
+
+  &__our-contacts {
+    display: flex;
+    padding-top: 65px;
+    text-align: left;
+  }
+
+  &__description {
+    color: #d0efea;
+    padding-right: 30px;
+  }
+
+  &__email {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contact__container {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .contact__container {
+    justify-content: space-between;
+    text-align: left;
+  }
+}

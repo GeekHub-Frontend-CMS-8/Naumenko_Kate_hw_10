@@ -1,0 +1,132 @@
+.carousel {
+  position: relative;
+  height: 100%;
+  max-width: 1500px;
+  width: 100%;
+
+  &__item {
+    position: absolute;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__title-container {
+    padding: 15px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: (rgba(255, 255, 255, .3));
+    border-radius: 5px;
+    color: $primary-home-page-color;
+  }
+
+  &__title {
+    font: 40px/0.9 $tertiary-font;
+    text-align: right;
+    white-space: pre-line;
+  }
+
+  &__largest-size {
+    font: 48px $fourth-seniority-font;
+  }
+
+  &__arrow {
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: (rgba(255, 255, 255, .5));
+    font-size: 45px;
+    text-decoration: none;
+  }
+
+  &__arrow-prev {
+    left: 0;
+  }
+
+  &__arrow-next {
+    right: 0;
+  }
+
+  &__item-1 {
+    opacity: 1;
+    z-index: 2;
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    position: relative;
+    top: 100px;
+  }
+  
+  &__dot {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.5;
+
+    &--active {
+      background-color: $primary-home-page-color;
+      opacity: 1;
+    }
+  }
+}
+
+[id^="target-item"] { display: none; }
+
+
+*:target ~ .carousel__item-1 { opacity: 0; }
+
+#target-item-1:target ~ .carousel__item-1 { opacity: 1; }
+
+#target-item-2:target ~ .carousel__item-2,
+#target-item-3:target ~ .carousel__item-3 {
+  opacity: 1;
+  z-index: 3;
+}
+
+@media only screen and (min-width: 768px) {
+  .carousel {
+
+    &__title {
+      font-size: 60px;
+    }
+
+    &__largest-size {
+      font-size: 138px;
+      padding-left: 10px;
+    }
+
+    &__arrow {
+      width: 50px;
+      font-size: 90px;
+    }
+
+    &__dots {
+      top: 230px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .carousel__title-container {
+    padding: 15px 55px;
+  }
+}

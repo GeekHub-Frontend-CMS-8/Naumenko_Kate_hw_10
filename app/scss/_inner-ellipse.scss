@@ -1,0 +1,12 @@
+.inner-ellipse {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #c45158;
+  border-radius: 50%;
+  background-color: $primary-color;
+  color: #c45158;
+  font-size: 60px;
+}

@@ -1,0 +1,12 @@
+.services {
+  background-color: $primary-service-page-color;
+  background-image: url("../img/Layer_services.png");
+
+  &__container-title {
+    padding: 10px 0 20px;
+  }
+
+  &__intro {
+    color: #ffcccf;
+  }
+}

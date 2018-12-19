@@ -1,0 +1,14 @@
+.global-properties {
+  padding: 190px 0 125px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-repeat: no-repeat;
+
+}
+
+@media only screen and (min-width: 768px) {
+  .global-properties {
+    background-size: contain;
+  }
+}
